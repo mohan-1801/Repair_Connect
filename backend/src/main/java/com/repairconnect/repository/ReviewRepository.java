@@ -1,0 +1,1 @@
+package com.repairconnect.repository; import com.repairconnect.entity.Review; import java.util.*; import org.springframework.data.jpa.repository.JpaRepository; public interface ReviewRepository extends JpaRepository<Review,Long>{List<Review> findByProviderIdOrderByCreatedAtDesc(Long providerId); boolean existsByBookingId(Long bookingId);}

@@ -1,0 +1,3 @@
+package com.repairconnect.entity;
+import jakarta.persistence.*;
+@Entity @Table(name="customers") public class CustomerProfile { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @OneToOne(optional=false) private User user; private String address; private String city; public CustomerProfile(){} public CustomerProfile(User u,String a,String c){user=u;address=a;city=c;} public Long getId(){return id;} public User getUser(){return user;} public String getAddress(){return address;} public void setAddress(String v){address=v;} public String getCity(){return city;} public void setCity(String v){city=v;} }

@@ -1,0 +1,1 @@
+package com.repairconnect.repository; import com.repairconnect.entity.*; import java.util.Optional; import org.springframework.data.jpa.repository.JpaRepository; public interface CustomerRepository extends JpaRepository<CustomerProfile,Long>{Optional<CustomerProfile> findByUserEmail(String email);}

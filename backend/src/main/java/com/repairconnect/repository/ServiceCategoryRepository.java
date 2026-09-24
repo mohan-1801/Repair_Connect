@@ -1,0 +1,1 @@
+package com.repairconnect.repository; import com.repairconnect.entity.ServiceCategory; import org.springframework.data.jpa.repository.JpaRepository; public interface ServiceCategoryRepository extends JpaRepository<ServiceCategory,Long>{}

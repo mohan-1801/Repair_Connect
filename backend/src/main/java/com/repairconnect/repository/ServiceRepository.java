@@ -1,0 +1,1 @@
+package com.repairconnect.repository; import com.repairconnect.entity.ServiceItem; import java.util.*; import org.springframework.data.jpa.repository.JpaRepository; public interface ServiceRepository extends JpaRepository<ServiceItem,Long>{List<ServiceItem> findByProviderId(Long id);}
